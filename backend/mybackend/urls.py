@@ -21,8 +21,10 @@ from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
     path('api/',include("api.urls")),
+    path( "api/auth/",include ("dj_rest_auth.urls")),
+    path("api/social/login/",include("nextjsdrfauth.urls")),
+    
     path("",include("main.urls")),
     path("",include("django_nextjs.urls")),
 
