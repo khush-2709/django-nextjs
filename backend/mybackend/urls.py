@@ -21,13 +21,12 @@ from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path("api/posts/", include("posts.urls")),
-    #path("api/auth/", include("dj_rest_auth.urls")),  # endpoints provided by dj-rest-auth
-    #path("api/social/login/", include("main.urls")),  # our own views
+
+    path('api/',include("api.urls")),
+    path("",include("main.urls")),
+    path("",include("django_nextjs.urls")),
+
     
-     #path("",include("main.urls")),
-     #path('accounts/', include('allauth.urls')),
-     #path('logout', LogoutView.as_view()), 
-     #path("",include("django_nextjs.urls")),
-    #path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    
+
 ]

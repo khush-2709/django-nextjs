@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
+
+    'django_nextjs',
+    'rest_framework',
+
     'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
@@ -52,7 +56,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'oauth2_provider',
+
     'main',
+    'api'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
